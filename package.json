@@ -3,6 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+  "homepage": "https://Vaishnavi22Thakur.github.io/AI-Fake-News-Detector",
   "scripts": {
     "dev": "vite",
     "server": "nodemon server/server.js",
