@@ -11,7 +11,7 @@ import IntroScreen from './components/IntroScreen';
 
 import './App.css';
 import './i18n/i18n';
-const API_URL = 'http://localhost:5000';
+
 const API_URL = 'https://ai-fake-news-detector-r4cz.onrender.com';
 function AppInner() {
   const { t, i18n } = useTranslation();
