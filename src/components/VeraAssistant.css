@@ -1,0 +1,132 @@
+.vera-assistant {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.vera-char-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  flex-shrink: 0;
+}
+
+.vera-char {
+  width: 56px; height: 56px;
+  background: var(--bg2);
+  border: 2px solid;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  position: relative;
+}
+
+.vera-char-face { position: relative; width: 36px; height: 26px; }
+
+.vc-eye {
+  position: absolute;
+  width: 10px; height: 10px;
+  background: rgba(255,255,255,0.04);
+  border: 1.5px solid;
+  border-radius: 50%;
+  top: 1px;
+  display: flex; align-items: center; justify-content: center;
+}
+.vc-eye.l { left: 1px; }
+.vc-eye.r { right: 1px; }
+
+.vc-pupil { width: 4px; height: 4px; border-radius: 50%; }
+
+.vc-mouth {
+  position: absolute;
+  bottom: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 14px; height: 7px;
+  border: 1.5px solid;
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+
+.vera-char-antenna {
+  position: absolute;
+  top: -16px; left: 50%;
+  transform: translateX(-50%);
+  width: 2px; height: 12px;
+  background: rgba(255,255,255,0.2);
+}
+
+.vc-ball {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px; left: -2px;
+  box-shadow: 0 0 5px currentColor;
+}
+
+.vc-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.58rem;
+  color: var(--text2);
+  letter-spacing: 0.12em;
+}
+
+/* Speech bubble */
+.vera-bubble {
+  background: var(--card2);
+  border: 1px solid var(--border);
+  border-radius: 0 14px 14px 14px;
+  padding: 1rem 1.25rem;
+  flex: 1;
+  position: relative;
+}
+
+.vera-bubble-arrow {
+  position: absolute;
+  top: 14px; left: -7px;
+  width: 0; height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 7px solid var(--border);
+}
+.vera-bubble-arrow::after {
+  content: '';
+  position: absolute;
+  top: -4px; left: 2px;
+  width: 0; height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+  border-right: 6px solid var(--card2);
+}
+
+.vera-bubble-msg {
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.vera-reasons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding-top: 0.625rem;
+  border-top: 1px solid var(--border);
+}
+
+.vera-reasons li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  color: var(--text2);
+  line-height: 1.4;
+}
+
+.vera-reason-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
